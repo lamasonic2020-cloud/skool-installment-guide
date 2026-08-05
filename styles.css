@@ -51,6 +51,7 @@ h1 { margin: 0; font-size: clamp(30px, 8vw, 48px); line-height: 1.15; letter-spa
   box-shadow: 0 12px 34px rgba(48, 38, 28, .08);
 }
 .step-head { display: grid; grid-template-columns: 46px 1fr; gap: 12px; align-items: center; padding: 17px 18px 14px; }
+.step-head.no-number { grid-template-columns: 1fr; }
 .num { display: grid; width: 46px; height: 46px; place-items: center; border-radius: 50%; background: var(--pink); color: #fff; font-size: 21px; font-weight: 900; }
 .annual .num { background: var(--green); }
 .installment .num { background: #d49114; }
