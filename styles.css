@@ -63,6 +63,7 @@ h1 { margin: 0; font-size: clamp(30px, 8vw, 48px); line-height: 1.15; letter-spa
 .success { background: #e7f7f3; color: #14584f; }
 .quick-actions { display: grid; gap: 10px; padding: 0 14px 16px; }
 .quick-action { display: grid; grid-template-columns: 40px 1fr auto; gap: 11px; align-items: center; padding: 14px; border-radius: 16px; background: #171717; color: #fff; text-decoration: none; box-shadow: 0 8px 22px rgba(20,20,20,.12); }
+.quick-action.no-action-num { grid-template-columns: 1fr auto; }
 .quick-action.secondary { background: #d49114; color: #211604; }
 .quick-action .action-num { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 50%; background: rgba(255,255,255,.16); font-weight: 900; }
 .quick-action strong { display: block; font-size: 16px; }
