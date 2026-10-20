@@ -66,6 +66,7 @@ h1 { margin: 0; font-size: clamp(30px, 8vw, 48px); line-height: 1.15; letter-spa
 .quick-action { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 11px; align-items: center; width: 100%; min-height: 76px; padding: 14px 16px; border-radius: 16px; background: #171717; color: #fff; text-decoration: none; box-shadow: 0 8px 22px rgba(20,20,20,.12); }
 .quick-action.has-action-num { grid-template-columns: 40px minmax(0,1fr) auto; }
 .quick-action.secondary { background: #d49114; color: #211604; }
+.quick-action.red { background: #e02424; color: #fff; box-shadow: 0 8px 22px rgba(224,36,36,.28); }
 .quick-action .action-num { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 50%; background: rgba(255,255,255,.16); font-weight: 900; }
 .quick-action span { min-width: 0; }
 .quick-action strong { display: block; font-size: 16px; line-height: 1.45; overflow-wrap: break-word; }
