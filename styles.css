@@ -67,6 +67,11 @@ h1 { margin: 0; font-size: clamp(30px, 8vw, 48px); line-height: 1.15; letter-spa
 .quick-action.has-action-num { grid-template-columns: 40px minmax(0,1fr) auto; }
 .quick-action.secondary { background: #d49114; color: #211604; }
 .quick-action.red { background: #e02424; color: #fff; box-shadow: 0 8px 22px rgba(224,36,36,.28); }
+.quick-action.red { animation: action-bounce 1.6s ease-in-out infinite; }
+.quick-action.red .action-arrow { animation: action-nudge 1.6s ease-in-out infinite; }
+@keyframes action-bounce { 0%, 60%, 100% { transform: translateY(0) scale(1); } 15% { transform: translateY(-6px) scale(1.02); } 30% { transform: translateY(0) scale(1); } 42% { transform: translateY(-3px) scale(1.01); } }
+@keyframes action-nudge { 0%, 60%, 100% { transform: translateX(0); } 15% { transform: translateX(5px); } 30% { transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .quick-action.red, .quick-action.red .action-arrow { animation: none; } }
 .quick-action .action-num { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 50%; background: rgba(255,255,255,.16); font-weight: 900; }
 .quick-action span { min-width: 0; }
 .quick-action strong { display: block; font-size: 16px; line-height: 1.45; overflow-wrap: break-word; }
